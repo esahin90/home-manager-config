@@ -94,11 +94,15 @@
 
         nix.enable = true;
         clang.enable = true;
-        zig.enable = true;
         python.enable = true;
-        markdown.enable = true;
+        markdown = {
+          enable = true;
+          extensions.render-markdown-nvim.enable = true;
+        };
+        terraform.enable = true;
         ts.enable = true;
         html.enable = true;
+        yaml.enable = true;
       };
 
       visuals = {
