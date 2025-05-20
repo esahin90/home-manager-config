@@ -71,6 +71,10 @@
       map ctrl+shift+.        move_tab_forward
       map ctrl+shift+,        move_tab_backward
 
+      # resize split
+      map ctrl+left resize_window narrower
+      map ctrl+right resize_window wider
+
       # Miscellaneous
       map ctrl+shift+up      increase_font_size
       map ctrl+shift+down    decrease_font_size

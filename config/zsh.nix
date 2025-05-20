@@ -38,7 +38,7 @@
     ];
 
     initContent = ''
-      source /opt/ros/jazzy/setup.zsh
+      source /opt/ros/$ROS_DISTRO/setup.zsh
     '';
 
     shellAliases = {
