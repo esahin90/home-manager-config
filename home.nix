@@ -17,7 +17,7 @@
 
   home.username = "sahin";
   home.homeDirectory = "/home/sahin";
-  home.stateVersion = "25.05"; # Please read the comment before changing.
+  home.stateVersion = "25.05";
   home.packages = with pkgs; [
     bat
     diff-so-fancy

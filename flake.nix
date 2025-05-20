@@ -2,7 +2,6 @@
   description = "Home Manager configuration of sahin";
 
   inputs = {
-    # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     systems.url = "github:nix-systems/x86_64-linux";
     flake-utils = {
@@ -39,15 +38,11 @@
     homeConfigurations."sahin" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
-      # Specify your home configuration modules here, for example,
-      # the path to your home.nix
       modules = [
         nvf.homeManagerModules.default
         ./home.nix
       ];
 
-      # Optionally use extraSpecialArgs
-      # to pass through arguments to home.nix
       extraSpecialArgs = {
         nixgl = nixgl;
       };
