@@ -25,6 +25,7 @@
     lazydocker
     lazygit
     ripgrep
+    zsh-forgit
   ];
   home.sessionVariables = {
     LANG = "en_US.UTF-8";
