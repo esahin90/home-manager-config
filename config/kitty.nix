@@ -24,6 +24,7 @@ in
       cursor_trail = 1;
       tab_fade = 1;
       active_border_color = tb_bg;
+      inactive_border_color = tb_fg;
       tab_bar_background = tb_bg;
       inactive_tab_background = tb_bg;
       inactive_tab_foreground = tb_fg;

@@ -45,6 +45,18 @@
           desc = "File browser toggle";
         }
         {
+          key = "<leader>bo";
+          mode = ["n"];
+          action = "<cmd>BufferLineCloseOthers<cr>";
+          desc = "Close other buffers";
+        }
+        {
+          key = "<leader>bx";
+          mode = ["n"];
+          action = "<cmd>BufferLinePickClose<cr>";
+          desc = "Pick and close buffer";
+        }
+        {
           key = "<C-h>";
           mode = ["i"];
           action = "<Left>";
