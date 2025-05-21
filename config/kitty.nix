@@ -31,7 +31,7 @@ in
       active_tab_background = tb_fg;
       active_tab_foreground = tb_bg;
       active_tab_font_style = "bold";
-      tab_bar_edge = "top";
+      tab_bar_edge = "bottom";
       tab_bar_margin_width = 0;
       tab_bar_style = "slant";
       enabled_layouts = "splits";
