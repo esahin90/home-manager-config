@@ -2,7 +2,12 @@
   config,
   pkgs,
   ...
-}: {
+}:
+let
+  tb_bg = "#36a3d9";
+  tb_fg = "#0e1419";
+in
+{
   programs.kitty = {
     enable = true;
     package = config.lib.nixGL.wrap pkgs.kitty;
@@ -18,12 +23,16 @@
       mouse_hide_wait = 60;
       cursor_trail = 1;
       tab_fade = 1;
+      active_border_color = tb_bg;
+      tab_bar_background = tb_bg;
+      inactive_tab_background = tb_bg;
+      inactive_tab_foreground = tb_fg;
+      active_tab_background = tb_fg;
+      active_tab_foreground = tb_bg;
       active_tab_font_style = "bold";
-      inactive_tab_font_style = "bold";
       tab_bar_edge = "top";
       tab_bar_margin_width = 0;
-      tab_bar_style = "powerline";
-      #tab_bar_style = "fade";
+      tab_bar_style = "slant";
       enabled_layouts = "splits";
     };
     extraConfig = ''
