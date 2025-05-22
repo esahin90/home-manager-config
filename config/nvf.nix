@@ -139,7 +139,10 @@
       snippets.luasnip.enable = true;
 
       tabline = {
-        nvimBufferline.enable = true;
+        nvimBufferline = {
+          enable = true;
+          setupOpts.options.separator_style = "slant";
+        };
       };
 
       treesitter.context.enable = true;
