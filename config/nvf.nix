@@ -145,7 +145,13 @@
         };
       };
 
-      treesitter.context.enable = true;
+      treesitter.context = {
+        enable = true;
+        setupOpts = {
+          max_lines = 5;
+          trim_scope = "inner";
+        };
+      };
 
       binds = {
         whichKey.enable = true;
