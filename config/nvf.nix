@@ -187,8 +187,9 @@
           precognition.enable = false;
         };
 
-        images = {
-          image-nvim.enable = false;
+        images.image-nvim = {
+          enable = true;
+          setupOpts.backend = "kitty";
         };
       };
 
