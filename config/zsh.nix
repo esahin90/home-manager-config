@@ -38,10 +38,14 @@
     ];
 
     initContent = ''
+      # ROS setup
       if [ -z "$ROS_DISTRO" ]; then
         export ROS_DISTRO="jazzy"
       fi
-      source /opt/ros/$ROS_DISTRO/setup.zsh
+
+      if [ -f /opt/ros/$ROS_DISTRO/setup.zsh ]; then
+        source /opt/ros/$ROS_DISTRO/setup.zsh
+      fi
     '';
 
     shellAliases = {

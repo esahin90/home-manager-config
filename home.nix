@@ -20,6 +20,7 @@
   home.stateVersion = "25.05";
   home.packages = with pkgs; [
     bat
+    btop
     diff-so-fancy
     eza
     lazydocker

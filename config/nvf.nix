@@ -7,6 +7,8 @@
       viAlias = true;
       withNodeJs = true;
 
+      lineNumberMode = "number";
+
       options = {
         tabstop = 2;
         shiftwidth = 2;
