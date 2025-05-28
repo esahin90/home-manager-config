@@ -26,6 +26,7 @@
     lazydocker
     lazygit
     ripgrep
+    xclip
     zsh-forgit
   ];
   home.sessionVariables = {
