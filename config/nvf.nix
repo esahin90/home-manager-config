@@ -59,6 +59,12 @@
           desc = "Pick and close buffer";
         }
         {
+          key = "<leader>dt";
+          mode = ["n"];
+          action = "<cmd>lua if vim.diagnostic.is_enabled() then vim.diagnostic.enable(false) else vim.diagnostic.enable() end<cr>";
+          desc = "Toggle diagnostics";
+        }
+        {
           key = "<C-h>";
           mode = ["i"];
           action = "<Left>";
@@ -231,6 +237,10 @@
 
         committia = {
           package = pkgs.vimPlugins.committia;
+        };
+
+        zen-mode-nvim = {
+          package = pkgs.vimPlugins.zen-mode-nvim;
         };
       };
     };

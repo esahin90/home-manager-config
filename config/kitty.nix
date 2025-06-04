@@ -13,7 +13,7 @@ in
     package = config.lib.nixGL.wrap pkgs.kitty;
     settings = {
       font_size = 14;
-      background_opacity = 0.4;
+      background_opacity = 0.7;
       background_blur = 32;
       wheel_scroll_min_lines = 1;
       window_padding_width = 4;
