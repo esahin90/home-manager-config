@@ -178,6 +178,11 @@
         gitsigns.codeActions.enable = false; # throws an annoying debug message
       };
 
+      terminal.toggleterm = {
+        enable = true;
+        setupOpts.direction = "float";
+      };
+
       projects.project-nvim.enable = true;
       dashboard.dashboard-nvim.enable = true;
 
