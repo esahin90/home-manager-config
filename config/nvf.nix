@@ -47,6 +47,12 @@
           desc = "File browser toggle";
         }
         {
+          key = "<leader>zm";
+          mode = ["n"];
+          action = "<cmd>ZenMode<cr>";
+          desc = "Toggle ZenMode";
+        }
+        {
           key = "<leader>bo";
           mode = ["n"];
           action = "<cmd>BufferLineCloseOthers<cr>";
