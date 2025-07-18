@@ -41,6 +41,12 @@
           desc = "Search files by contents";
         }
         {
+          key = "<leader>fj";
+          mode = ["n"];
+          action = "<cmd>Telescope jumplist<cr>";
+          desc = "Search recent file history";
+        }
+        {
           key = "<leader>fe";
           mode = ["n"];
           action = "<cmd>Neotree toggle<cr>";
